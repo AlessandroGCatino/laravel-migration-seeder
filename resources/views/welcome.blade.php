@@ -12,7 +12,7 @@
 
     @foreach ($trains as $departure)
     
-    <div class="card col-5 <?= ($departure["cancelled"]) ? "bg-danger" : "bg-success" ?>">
+    <div class="card col-5 text-center <?= ($departure["cancelled"]) ? "bg-danger" : "bg-success" ?>">
         <div class="card-body">
             <h3 class="text-center">{{$departure["company"]}}</h3>
             <h5 class="card-title">{{$departure["startStation"]}} -> {{$departure["endStation"]}} <small>ID:{{$departure["trainCode"]}}</small></h5>
