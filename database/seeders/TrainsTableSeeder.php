@@ -25,6 +25,7 @@ class TrainsTableSeeder extends Seeder
             $newTrain->coaches = $faker->numberBetween($min = 1, $max = 12);
             $newTrain->onTime = $faker->boolean;
             $newTrain->cancelled = $faker->boolean;
+
             $newTrain->save();
         }
     }
